@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .faNum {
+        -moz-font-feature-settings: "ss03";
+        -webkit-font-feature-settings: "ss03";
+        font-feature-settings: "ss03";
+    }
+    /* ... */
+}
