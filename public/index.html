@@ -51,11 +51,42 @@
         </span>
     </div>
 </div>
-
+<!--Navbar Desktop-->
+<header class="bg-white hidden md:block sticky top-0 shadow-lg z-10 mb-5">
+    <div class="container flex items-center justify-between p-4">
+        <nav>
+            <ul class="flex items-center gap-x-2 text-sm lg:gap-x-4 lg:text-lg text-slate-800">
+                <li class="block"><a href="#"><img src="../assets/images/Logo.svg" alt="logo"></a></li>
+                <li class="block py-2 px-4 hover:bg-gray-100 rounded-md transition-all duration-500"><a
+                        href="#">خانه</a></li>
+                <li class="block py-2 px-4 hover:bg-gray-100 rounded-md transition-all duration-500"><a
+                        href="#">موبایل</a></li>
+                <li class="block py-2 px-4 hover:bg-gray-100 rounded-md transition-all duration-500"><a href="#">لپ
+                    تاپ</a></li>
+                <li class="block py-2 px-4 hover:bg-gray-100 rounded-md transition-all duration-500"><a href="#">ساعت
+                    هوشمند</a></li>
+            </ul>
+        </nav>
+        <div class="flex-1 max-w-xl mr-4">
+            <div class="bg-gray-100 rounded-lg flex items-center w-full py-2 px-4">
+                <span class="ml-4 text-slate-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+                    </svg>
+                </span>
+                <input type="search" placeholder="جستجوی  نام محصول، نام برند، نام مدل و..."
+                       class="text-sm lg:text-lg text-slate-800 focus:outline-none bg-transparent w-full">
+            </div>
+        </div>
+    </div>
+</header>
+<!--Content-->
 <div class="container grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8">
     <!--sidebar section-->
     <div class="hidden md:block col-span-4 lg:col-span-3 row-span-2">
-        <div class="bg-white p-5 rounded-xl">
+        <div class="bg-white p-5 rounded-xl max-h-[calc(100vh_-_120px)] overflow-auto sticky top-24">
             <!--category section-->
             <div class="mb-7">
                 <div class="text-lg font-bold text-orange-400 mb-5">دسته بندی</div>
@@ -364,6 +395,7 @@
         </div>
     </div>
 </div>
+
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </body>

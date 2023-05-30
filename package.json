@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fouita/slider": "^0.0.4",
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.14",
     "postcss-cli": "^10.1.0",
